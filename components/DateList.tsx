@@ -120,7 +120,7 @@ const DateList = ({
               <Disclosure>
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex justify-between w-full py-2 text-sm font-medium text-left text-purple-900 border-b border-white hover:border-gray-400 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                    <Disclosure.Button className="flex justify-between w-full py-2 text-sm font-medium text-left border-b border-white hover:border-gray-400 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                       <span className="font-bold text-blue-300">
                         {weekdayMonthNumber}.{weekdayDayNumber}
                       </span>
