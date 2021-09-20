@@ -20,6 +20,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     setCurrentDateTime(new Date());
+
     const interval = setInterval(() => {
       const loadDate = new Date();
 

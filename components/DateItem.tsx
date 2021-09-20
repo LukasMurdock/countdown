@@ -23,21 +23,6 @@ const DateItem = ({
     hours: itemTime.hours,
     minutes: itemTime.minutes
   });
-  console.log(itemDate);
-
-  console.log(currentDateTime > itemDate);
-  {
-    formatDuration(
-      intervalToDuration({
-        start: currentDateTime,
-        end: itemDate
-      }),
-      {
-        delimiter: ' ',
-        format: ['hours', 'minutes']
-      }
-    );
-  }
 
   const itemDuration = formatDuration(
     intervalToDuration({
@@ -45,8 +30,8 @@ const DateItem = ({
       end: itemDate
     }),
     {
-      delimiter: ' ',
-      format: ['hours', 'minutes']
+      //   delimiter: ' ',
+      format: ['months', 'weeks', 'days', 'hours', 'minutes']
     }
   );
 
