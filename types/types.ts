@@ -3,7 +3,7 @@
 //   }
 
 export interface countdownProps {
-  [index: string]: { items?: { name: string; time: string }[] };
+  [index: string]: { items?: { name: string; startTime: string }[] };
 }
 
 // export interface countdownProps {

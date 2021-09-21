@@ -48,33 +48,33 @@ const Home: NextPage = () => {
   const countdown = {
     Monday: {
       items: [
-        { name: 'CSE 174', time: '10:05' },
-        { name: 'MKT 315', time: '13:15' }
+        { name: 'CSE 174', startTime: '10:05' },
+        { name: 'MKT 315', startTime: '13:15' }
       ]
     },
     Tuesday: {
       items: [
-        { name: 'MKT 395', time: '10:05' },
-        { name: 'MGT 302', time: '14:50' }
+        { name: 'MKT 395', startTime: '10:05', endTime: '11:25' },
+        { name: 'MGT 302', startTime: '14:50' }
       ]
     },
     Wednesday: {
       items: [
-        { name: 'ISA 225', time: '08:30' },
-        { name: 'CSE 174', time: '10:05' },
-        { name: 'MKT 315', time: '13:15' }
+        { name: 'ISA 225', startTime: '08:30' },
+        { name: 'CSE 174', startTime: '10:05' },
+        { name: 'MKT 315', startTime: '13:15' }
       ]
     },
     Thursday: {
       items: [
-        { name: 'MKT 395', time: '10:05:00' },
-        { name: 'MGT 302', time: '14:50:00' }
+        { name: 'MKT 395', startTime: '10:05:00' },
+        { name: 'MGT 302', startTime: '14:50:00' }
       ]
     },
     Friday: {
       items: [
-        { name: 'ISA 225', time: '08:30:00' },
-        { name: 'CSE 174 Lab', time: '10:05:00' }
+        { name: 'ISA 225', startTime: '08:30:00' },
+        { name: 'CSE 174 Lab', startTime: '10:05:00' }
       ]
     },
     Saturday: {},
