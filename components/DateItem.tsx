@@ -67,10 +67,10 @@ const DateItem = ({
               type="button"
               onClick={() => setShowInterval(!showInterval)}
             >
-              <ClockIcon className="w-5 h-5 ml-3 hover:text-blue-300" />
+              <ClockIcon className="w-5 h-5 ml-3 text-gray-300 hover:text-blue-300" />
             </button>
             {showInterval && (
-              <span className="ml-2 font-normal">
+              <span className="ml-2 font-normal text-gray-300">
                 {item.startTime} – {item?.endTime}
               </span>
             )}
