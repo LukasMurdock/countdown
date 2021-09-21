@@ -89,8 +89,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="p-6 m-auto prose">
-        <h1 className="m-0 text-gray-600">{todayFormat}</h1>
-        <p className="m-0 text-gray-400">Last Updated: {lastUpdatedFormat}</p>
+        <p className="m-0 text-sm text-gray-400">{lastUpdatedFormat}</p>
+        <h1 className="pb-2 m-0 font-serif text-gray-600 ">{todayFormat}</h1>
 
         <DateList
           dayView={dateListView}
