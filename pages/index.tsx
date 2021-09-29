@@ -7,7 +7,8 @@ import {
   startOfWeek,
   addDays,
   formatDuration,
-  intervalToDuration
+  intervalToDuration,
+  differenceInDays
 } from 'date-fns';
 import DateItem from '@/components/DateItem';
 import DateList from '@/components/DateList';
@@ -44,6 +45,11 @@ const Home: NextPage = () => {
     minute: 'numeric',
     second: 'numeric'
   });
+
+  const semester = {
+    start: '08/23/2021',
+    end: '12/11/2021'
+  };
 
   const countdown = {
     Monday: {
@@ -97,6 +103,49 @@ const Home: NextPage = () => {
           countdown={countdown}
           currentDateTime={currentDateTime}
         />
+      </div>
+      <div className="p-6 m-auto prose">
+        <h2 className="flex items-baseline justify-between pb-2 m-0 font-serif text-gray-600">
+          Semester progress{' '}
+          <span className="font-sans text-sm">
+            {Math.round(
+              (differenceInDays(currentDateTime, new Date(semester.start)) /
+                differenceInDays(
+                  new Date(semester.end),
+                  new Date(semester.start)
+                ) +
+                Number.EPSILON) *
+                100
+            )}
+            %
+          </span>
+        </h2>
+        <div className="relative w-full pt-1">
+          <div className="flex h-2 mb-4 mr-3 overflow-hidden text-xs bg-blue-200 rounded">
+            <div
+              style={{
+                width: `${Math.round(
+                  (differenceInDays(currentDateTime, new Date(semester.start)) /
+                    differenceInDays(
+                      new Date(semester.end),
+                      new Date(semester.start)
+                    ) +
+                    Number.EPSILON) *
+                    100
+                )}%`
+              }}
+              className="flex flex-col justify-center text-center text-white bg-blue-500 shadow-none whitespace-nowrap"
+            ></div>
+          </div>
+        </div>
+        {/* <p>
+          total semester days:{' '}
+          {differenceInDays(new Date(semester.end), new Date(semester.start))}
+        </p>
+        <p>
+          days from start of semester:{' '}
+          {differenceInDays(currentDateTime, new Date(semester.start))}
+        </p> */}
       </div>
     </div>
   );
