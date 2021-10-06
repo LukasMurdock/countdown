@@ -74,7 +74,8 @@ const Home: NextPage = () => {
     Thursday: {
       items: [
         { name: 'MKT 395', startTime: '10:05:00' },
-        { name: 'MGT 302', startTime: '14:50:00' }
+        { name: 'MGT 302', startTime: '14:50:00' },
+        { name: 'Meeting', startTime: '17:00:00' }
       ]
     },
     Friday: {
