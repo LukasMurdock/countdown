@@ -69,7 +69,7 @@ const Home: NextPage = () => {
         { name: 'ISA 225', startTime: '08:30' },
         { name: 'CSE 174', startTime: '10:05' },
         { name: 'MKT 315', startTime: '13:15' },
-        { name: 'SA Meeting', startTime: '18:00' }
+        { name: 'FIN 301/SA', startTime: '18:00', endTime: '20:00' }
       ]
     },
     Thursday: {
