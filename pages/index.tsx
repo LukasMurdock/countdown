@@ -70,7 +70,7 @@ const Home: NextPage = () => {
         { name: 'CSE 174', startTime: '10:05' },
         { name: 'MKT 315', startTime: '13:15' },
         { name: 'FIN 301/SA', startTime: '18:00', endTime: '20:00' },
-        { name: 'Exam', startTime: '20:00', endTime: '22:00' }
+        // { name: 'Exam', startTime: '20:00', endTime: '22:00' }
       ]
     },
     Thursday: {
