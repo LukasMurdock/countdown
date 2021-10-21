@@ -12,6 +12,7 @@ import {
 } from 'date-fns';
 import DateItem from '@/components/DateItem';
 import DateList from '@/components/DateList';
+import useSound from 'use-sound';
 
 const Home: NextPage = () => {
   //   const currentDateTime = new Date();
@@ -89,6 +90,12 @@ const Home: NextPage = () => {
     Saturday: {},
     Sunday: {}
   } as countdownProps;
+
+  // const [playActive] = useSound(
+  //   '/assets/audio/duck.mp3',
+  //   { volume: 0.25 }
+  // );
+  // onMouseDown={playActive}
 
   return (
     <div>

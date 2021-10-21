@@ -3,10 +3,12 @@ import {
   startOfWeek,
   addDays,
   formatDuration,
-  intervalToDuration
+  intervalToDuration,
+  differenceInMinutes
 } from 'date-fns';
 import { ClockIcon } from '@heroicons/react/outline';
 import { useState } from 'react';
+import useSound from 'use-sound';
 
 const DateItem = ({
   currentDateTime,
@@ -38,6 +40,15 @@ const DateItem = ({
       format: ['months', 'weeks', 'days', 'hours', 'minutes']
     }
   );
+
+  const [quack] = useSound('/assets/audio/duck.mp3');
+
+  if (
+    differenceInMinutes(itemDate, currentDateTime) > 0 &&
+    differenceInMinutes(itemDate, currentDateTime) <= 20
+  ) {
+    console.log('QUACK ' + differenceInMinutes(itemDate, currentDateTime));
+  }
 
   return (
     <div>
