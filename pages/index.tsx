@@ -69,7 +69,7 @@ const Home: NextPage = () => {
         { name: 'ISA 225', startTime: '08:30' },
         { name: 'CSE 174', startTime: '10:05' },
         { name: 'MKT 315', startTime: '13:15' },
-        { name: 'FIN 301/SA', startTime: '18:00', endTime: '20:00' },
+        { name: 'FIN 301/SA', startTime: '18:00', endTime: '20:00' }
         // { name: 'Exam', startTime: '20:00', endTime: '22:00' }
       ]
     },
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
       items: [
         { name: 'MKT 395', startTime: '10:05:00' },
         { name: 'MGT 302', startTime: '14:50:00' },
-        { name: 'Meeting', startTime: '17:00:00' }
+        { name: 'House', startTime: '18:00:00' }
       ]
     },
     Friday: {
