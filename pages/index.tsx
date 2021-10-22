@@ -13,6 +13,75 @@ import {
 import DateItem from '@/components/DateItem';
 import DateList from '@/components/DateList';
 import useSound from 'use-sound';
+import TimeUntil from '@/components/TimeUntil';
+
+const countdown = {
+  Monday: {
+    items: [
+      { name: 'CSE 174', startTime: '10:05' },
+      { name: 'MKT 315', startTime: '13:15' }
+    ]
+  },
+  Tuesday: {
+    items: [
+      { name: 'MKT 395', startTime: '10:05', endTime: '11:25' },
+      { name: 'MGT 302', startTime: '14:50' }
+    ]
+  },
+  Wednesday: {
+    items: [
+      { name: 'ISA 225', startTime: '08:30' },
+      { name: 'CSE 174', startTime: '10:05' },
+      { name: 'MKT 315', startTime: '13:15' },
+      { name: 'FIN 301/SA', startTime: '18:00', endTime: '20:00' }
+      // { name: 'Exam', startTime: '20:00', endTime: '22:00' }
+    ]
+  },
+  Thursday: {
+    items: [
+      { name: 'MKT 395', startTime: '10:05:00' },
+      { name: 'MGT 302', startTime: '14:50:00' }
+      // { name: 'House', startTime: '16:00:00' }
+    ]
+  },
+  Friday: {
+    items: [
+      { name: 'ISA 225', startTime: '08:30:00' },
+      { name: 'CSE 174 Lab', startTime: '10:05:00' }
+    ]
+  },
+  Saturday: {},
+  Sunday: {},
+  Other: {
+    items: [
+      {
+        name: 'Exam Week',
+        date: new Date(2021, 12, 6),
+        startTime: '12:00:00'
+      },
+      {
+        name: 'Birthday',
+        date: new Date(new Date().getFullYear(), 12, 9),
+        startTime: '12:00:00'
+      },
+      {
+        name: 'Out',
+        date: new Date(2021, 12, 28),
+        startTime: '12:00:00'
+      },
+      {
+        name: 'In',
+        date: new Date(2022, 1, 19),
+        startTime: '12:00:00'
+      },
+      {
+        name: 'Birthday2',
+        date: new Date(new Date().getFullYear(), 7, 7),
+        startTime: '12:00:00'
+      }
+    ]
+  }
+} as countdownProps;
 
 const Home: NextPage = () => {
   //   const currentDateTime = new Date();
@@ -51,45 +120,6 @@ const Home: NextPage = () => {
     start: '08/23/2021',
     end: '12/11/2021'
   };
-
-  const countdown = {
-    Monday: {
-      items: [
-        { name: 'CSE 174', startTime: '10:05' },
-        { name: 'MKT 315', startTime: '13:15' }
-      ]
-    },
-    Tuesday: {
-      items: [
-        { name: 'MKT 395', startTime: '10:05', endTime: '11:25' },
-        { name: 'MGT 302', startTime: '14:50' }
-      ]
-    },
-    Wednesday: {
-      items: [
-        { name: 'ISA 225', startTime: '08:30' },
-        { name: 'CSE 174', startTime: '10:05' },
-        { name: 'MKT 315', startTime: '13:15' },
-        { name: 'FIN 301/SA', startTime: '18:00', endTime: '20:00' }
-        // { name: 'Exam', startTime: '20:00', endTime: '22:00' }
-      ]
-    },
-    Thursday: {
-      items: [
-        { name: 'MKT 395', startTime: '10:05:00' },
-        { name: 'MGT 302', startTime: '14:50:00' },
-        // { name: 'House', startTime: '16:00:00' }
-      ]
-    },
-    Friday: {
-      items: [
-        { name: 'ISA 225', startTime: '08:30:00' },
-        { name: 'CSE 174 Lab', startTime: '10:05:00' }
-      ]
-    },
-    Saturday: {},
-    Sunday: {}
-  } as countdownProps;
 
   // const [playActive] = useSound(
   //   '/assets/audio/duck.mp3',
@@ -156,6 +186,17 @@ const Home: NextPage = () => {
           days from start of semester:{' '}
           {differenceInDays(currentDateTime, new Date(semester.start))}
         </p> */}
+      </div>
+      <div className="p-6 m-auto prose">
+        <h2 className="flex items-baseline justify-between pb-2 m-0 font-serif text-gray-600">
+          Others
+        </h2>
+        {countdown.Other.items &&
+          countdown.Other.items.map((item) => (
+            <div key={item.name} className="py-3">
+              <TimeUntil currentDateTime={currentDateTime} item={item} />
+            </div>
+          ))}
       </div>
     </div>
   );

@@ -4,7 +4,7 @@
 
 export interface countdownProps {
   [index: string]: {
-    items?: { name: string; startTime: string }[];
+    items?: { name: string; startTime: string; date?: Date }[];
   };
 }
 
@@ -19,5 +19,9 @@ export interface countdownProps {
 // }
 
 interface dayProps {
-  items?: { name: string; time: string }[];
+  items?: {
+    name: string;
+    time: string;
+    date?: string;
+  }[];
 }
