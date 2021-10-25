@@ -24,7 +24,7 @@ const countdown = {
   },
   Tuesday: {
     items: [
-      { name: 'MKT 395', startTime: '10:05', endTime: '11:25' },
+      { name: 'MKT 395 (online)', startTime: '10:05', endTime: '11:25' },
       { name: 'MGT 302', startTime: '14:50' }
     ]
   },
@@ -39,7 +39,7 @@ const countdown = {
   },
   Thursday: {
     items: [
-      { name: 'MKT 395', startTime: '10:05:00' },
+      { name: 'MKT 395 (online)', startTime: '10:05:00' },
       { name: 'MGT 302', startTime: '14:50:00' }
       // { name: 'House', startTime: '16:00:00' }
     ]
