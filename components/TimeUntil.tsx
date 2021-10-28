@@ -32,7 +32,6 @@ const TimeUntil = ({
     <div key={item.name}>
       <p className="flex items-center m-0 font-bold">{item.name}</p>
       <p className="m-0">{itemDuration}</p>
-      <p>{item.date && item.date.getFullYear()}</p>
     </div>
   );
 };
