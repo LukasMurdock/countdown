@@ -56,27 +56,27 @@ const countdown = {
     items: [
       {
         name: 'Exam Week',
-        date: new Date(2021, 12, 6),
+        date: new Date(2021, 12 - 1, 6),
         startTime: '12:00:00'
       },
       {
         name: 'Birthday',
-        date: new Date(new Date().getFullYear(), 12, 9),
+        date: new Date(new Date().getFullYear(), 12 - 1, 9),
         startTime: '12:00:00'
       },
       {
         name: 'Out',
-        date: new Date(2021, 12, 28),
+        date: new Date(2021, 12 - 1, 28),
         startTime: '12:00:00'
       },
       {
         name: 'In',
-        date: new Date(2022, 1, 19),
+        date: new Date(2022, 1 - 1, 19),
         startTime: '12:00:00'
       },
       {
         name: 'Birthday2',
-        date: new Date(new Date().getFullYear(), 7, 7),
+        date: new Date(new Date().getFullYear(), 7 - 1, 7),
         startTime: '12:00:00'
       }
     ]

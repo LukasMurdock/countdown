@@ -1,4 +1,10 @@
-import { addYears, formatDuration, intervalToDuration, isPast } from 'date-fns';
+import {
+  addYears,
+  formatDuration,
+  formatISO,
+  intervalToDuration,
+  isPast
+} from 'date-fns';
 
 const TimeUntil = ({
   currentDateTime,
@@ -18,7 +24,7 @@ const TimeUntil = ({
     }),
     {
       //   delimiter: ' ',
-      format: ['years', 'months', 'weeks', 'days', 'hours', 'minutes']
+      // format: ['years', 'months', 'weeks', 'days', 'hours', 'minutes']
     }
   );
 
@@ -26,6 +32,7 @@ const TimeUntil = ({
     <div key={item.name}>
       <p className="flex items-center m-0 font-bold">{item.name}</p>
       <p className="m-0">{itemDuration}</p>
+      <p>{item.date && item.date.getFullYear()}</p>
     </div>
   );
 };
