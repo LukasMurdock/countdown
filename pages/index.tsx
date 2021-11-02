@@ -14,6 +14,7 @@ import DateItem from '@/components/DateItem';
 import DateList from '@/components/DateList';
 import useSound from 'use-sound';
 import TimeUntil from '@/components/TimeUntil';
+import Weather from '@/components/Weather';
 
 const countdown = {
   Monday: {
@@ -24,7 +25,7 @@ const countdown = {
   },
   Tuesday: {
     items: [
-      { name: 'MKT 395 (online)', startTime: '10:05', endTime: '11:25' },
+      { name: 'MKT 395', startTime: '10:05', endTime: '11:25' },
       { name: 'MGT 302', startTime: '14:50' }
     ]
   },
@@ -39,7 +40,7 @@ const countdown = {
   },
   Thursday: {
     items: [
-      { name: 'MKT 395 (online)', startTime: '10:05:00' },
+      { name: 'MKT 395', startTime: '10:05:00' },
       { name: 'MGT 302', startTime: '14:50:00' }
       // { name: 'House', startTime: '16:00:00' }
     ]
@@ -137,7 +138,7 @@ const Home: NextPage = () => {
       <div className="p-6 m-auto prose">
         <p className="m-0 text-sm text-gray-400 ">{lastUpdatedFormat}</p>
         <h1 className="pb-2 m-0 font-serif text-gray-600 ">{todayFormat}</h1>
-
+        <Weather />
         <DateList
           dayView={dateListView}
           countdown={countdown}
