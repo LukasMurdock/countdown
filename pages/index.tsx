@@ -40,6 +40,7 @@ const countdown = {
   },
   Thursday: {
     items: [
+      { name: 'Scheduling', startTime: '07:30:00' },
       { name: 'MKT 395', startTime: '10:05:00' },
       { name: 'MGT 302', startTime: '14:50:00' }
       // { name: 'House', startTime: '16:00:00' }
