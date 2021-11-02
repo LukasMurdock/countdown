@@ -18,7 +18,7 @@ const url = 'https://api.openweathermap.org/data/2.5/onecall';
 const queryParams: queryParamProps = {
   lat: 39.507,
   lon: -84.7452,
-  exclude: '',
+  exclude: 'minutely,hourly,alerts',
   appId: '649e97722b26fd08e6226f3355ebed72',
   units: 'imperial'
 };
