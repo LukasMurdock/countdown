@@ -9,10 +9,11 @@ const Weather = () => {
   if (!data) return <div>loading...</div>;
 
   return (
-    <div className="p-4 rounded-lg bg-blue-50">
+    <div className="p-4 text-blue-900 rounded-lg bg-blue-50">
       {/* <p>dt: {data.current.dt}</p>
       <p>Sunrise: {data.current.sunrise}</p>
       <p>Sunset: {data.current.sunset}</p> */}
+      <p className="m-0 text-xs text-blue-300">{data.current.dt}</p>
       <p className="m-0">
         <span className="text-2xl font-medium">{data.current.temp}°</span>{' '}
         <span>Feels {data.current.feels_like}°</span>{' '}
