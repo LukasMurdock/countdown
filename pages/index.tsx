@@ -20,7 +20,8 @@ const countdown = {
   Monday: {
     items: [
       { name: 'CSE 174', startTime: '10:05' },
-      { name: 'MKT 315', startTime: '13:15' }
+      { name: 'MKT 315', startTime: '13:15' },
+      { name: 'Meeting', startTime: '16:00:00' }
     ]
   },
   Tuesday: {
@@ -40,7 +41,6 @@ const countdown = {
   },
   Thursday: {
     items: [
-      { name: 'Scheduling', startTime: '07:30:00' },
       { name: 'MKT 395 (no class 11/4)', startTime: '10:05:00' },
       { name: 'MGT 302', startTime: '14:50:00' }
       // { name: 'House', startTime: '16:00:00' }
