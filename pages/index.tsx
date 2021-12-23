@@ -18,41 +18,29 @@ import Weather from '@/components/Weather';
 
 const countdown = {
   Monday: {
-    items: [
-      { name: 'CSE 174', startTime: '10:05' },
-      { name: 'MKT 315', startTime: '13:15' },
-      { name: 'Meeting', startTime: '16:00:00' },
-      { name: 'ISA FINAL', startTime: '17:30:00' }
-    ]
+    items: []
   },
   Tuesday: {
     items: [
-      { name: 'MKT 395', startTime: '10:05', endTime: '11:25' },
-      { name: 'MGT 302', startTime: '14:50' }
+      { name: 'MKT 335', startTime: '08:30', endTime: '09:50' },
+      { name: 'CSE 271 (HUG 158)', startTime: '12:10', endTime: '02:00' },
+      { name: 'ECO 202', startTime: '02:50', endTime: '04:10' },
+      { name: 'CSE 252', startTime: '04:25', endTime: '05:45' }
     ]
   },
   Wednesday: {
-    items: [
-      { name: 'ISA 225', startTime: '08:30' },
-      { name: 'CSE 174', startTime: '10:05' },
-      { name: 'MKT 315', startTime: '13:15' },
-      { name: 'FIN 301/SA', startTime: '18:00', endTime: '20:00' }
-      // { name: 'Exam', startTime: '20:00', endTime: '22:00' }
-    ]
+    items: []
   },
   Thursday: {
     items: [
-      { name: 'MKT 395 (no class 11/4)', startTime: '10:05:00' },
-      { name: 'MGT 302', startTime: '14:50:00' },
-      { name: 'CSE FINAL', startTime: '10:15:00' }
-      // { name: 'House', startTime: '16:00:00' }
+      { name: 'MKT 335', startTime: '08:30', endTime: '09:50' },
+      { name: 'CSE 271 (BEN 009)', startTime: '12:10', endTime: '02:00' },
+      { name: 'ECO 202', startTime: '02:50', endTime: '04:10' },
+      { name: 'CSE 252', startTime: '04:25', endTime: '05:45' }
     ]
   },
   Friday: {
-    items: [
-      { name: 'ISA 225', startTime: '08:30:00' },
-      { name: 'CSE 174 Lab', startTime: '10:05:00' }
-    ]
+    items: []
   },
   Saturday: {},
   Sunday: {},
@@ -69,13 +57,13 @@ const countdown = {
         startTime: '12:00:00'
       },
       {
-        name: 'Out',
-        date: new Date(2021, 12 - 1, 28),
+        name: 'Last day of J-Term',
+        date: new Date(2022, 1 - 1, 22),
         startTime: '12:00:00'
       },
       {
-        name: 'In',
-        date: new Date(2022, 1 - 1, 19),
+        name: 'First day of Spring',
+        date: new Date(2022, 1 - 1, 24),
         startTime: '12:00:00'
       },
       {
@@ -121,8 +109,8 @@ const Home: NextPage = () => {
   });
 
   const semester = {
-    start: '08/23/2021',
-    end: '12/11/2021'
+    start: '01/01/2022',
+    end: '01/22/2021'
   };
 
   // const [playActive] = useSound(
