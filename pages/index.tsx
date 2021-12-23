@@ -78,6 +78,11 @@ const countdown = {
 const Home: NextPage = () => {
   //   const currentDateTime = new Date();
 
+  const semester = {
+    start: '01/01/2022',
+    end: '01/22/2022'
+  };
+
   const [currentDateTime, setCurrentDateTime] = useState<Date>();
   const [dateListView, setDateListView] = useState<'day' | 'week'>('week');
 
@@ -107,11 +112,6 @@ const Home: NextPage = () => {
     minute: 'numeric',
     second: 'numeric'
   });
-
-  const semester = {
-    start: '01/01/2022',
-    end: '01/22/2021'
-  };
 
   // const [playActive] = useSound(
   //   '/assets/audio/duck.mp3',
