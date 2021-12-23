@@ -1,12 +1,10 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  mode: 'jit',
-  purge: [
+  content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx}'
   ],
-  darkMode: false, // or 'media' or 'class'
   important: true,
   theme: {
     extend: {
@@ -20,8 +18,7 @@ module.exports = {
       zIndex: {
         '-10': '-10'
       }
-    },
-    variants: {}
+    }
   },
   plugins: [
     // require('@tailwindcss/aspect-ratio'),

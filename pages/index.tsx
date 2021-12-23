@@ -52,11 +52,6 @@ const countdown = {
         startTime: '12:00:00'
       },
       {
-        name: 'Birthday',
-        date: new Date(new Date().getFullYear(), 12 - 1, 9),
-        startTime: '12:00:00'
-      },
-      {
         name: 'Last day of J-Term',
         date: new Date(2022, 1 - 1, 22),
         startTime: '12:00:00'
@@ -69,6 +64,11 @@ const countdown = {
       {
         name: 'Birthday2',
         date: new Date(new Date().getFullYear(), 7 - 1, 7),
+        startTime: '12:00:00'
+      },
+      {
+        name: 'Birthday',
+        date: new Date(new Date().getFullYear(), 12 - 1, 9),
         startTime: '12:00:00'
       }
     ]
