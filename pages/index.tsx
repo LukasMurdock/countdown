@@ -62,9 +62,14 @@ const countdown = {
         startTime: '12:00:00'
       },
       {
+        name: 'Charter Ball',
+        date: new Date(2022, 2 - 1, 19),
+        startTime: '20:00:00'
+      },
+      {
         name: 'Cbus',
         date: new Date(2022, 2 - 1, 25),
-        startTime: '12:00:00'
+        startTime: '19:00:00'
       },
       {
         name: 'Birthday2',
