@@ -62,6 +62,11 @@ const countdown = {
         startTime: '12:00:00'
       },
       {
+        name: 'Cbus',
+        date: new Date(2022, 2 - 1, 25),
+        startTime: '12:00:00'
+      },
+      {
         name: 'Birthday2',
         date: new Date(new Date().getFullYear(), 7 - 1, 7),
         startTime: '12:00:00'
