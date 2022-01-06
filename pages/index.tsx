@@ -47,8 +47,13 @@ const countdown = {
   Other: {
     items: [
       {
-        name: 'Exam Week',
-        date: new Date(2021, 12 - 1, 6),
+        name: 'Ready Out',
+        date: new Date(2022, 1 - 1, 9),
+        startTime: '14:50:00'
+      },
+      {
+        name: 'Exam',
+        date: new Date(2022, 1 - 1, 10),
         startTime: '12:00:00'
       },
       {
