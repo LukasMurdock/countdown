@@ -47,21 +47,6 @@ const countdown = {
   Other: {
     items: [
       {
-        name: 'Ready Out',
-        date: new Date(2022, 1 - 1, 9),
-        startTime: '14:50:00'
-      },
-      {
-        name: 'Exam',
-        date: new Date(2022, 1 - 1, 10),
-        startTime: '12:00:00'
-      },
-      {
-        name: 'Last day of J-Term',
-        date: new Date(2022, 1 - 1, 22),
-        startTime: '12:00:00'
-      },
-      {
         name: 'First day of Spring',
         date: new Date(2022, 1 - 1, 24),
         startTime: '12:00:00'
