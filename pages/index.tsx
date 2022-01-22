@@ -62,6 +62,11 @@ const countdown = {
         startTime: '19:00:00'
       },
       {
+        name: 'Exam week',
+        date: new Date(2022, 5 - 1, 9),
+        startTime: '19:00:00'
+      },
+      {
         name: 'Birthday2',
         date: new Date(new Date().getFullYear(), 7 - 1, 7),
         startTime: '12:00:00'
