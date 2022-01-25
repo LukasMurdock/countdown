@@ -84,8 +84,8 @@ const Home: NextPage = () => {
   //   const currentDateTime = new Date();
 
   const semester = {
-    start: '01/01/2022',
-    end: '01/22/2022'
+    start: '01/24/2022',
+    end: '05/07/2022'
   };
 
   const [currentDateTime, setCurrentDateTime] = useState<Date>();
