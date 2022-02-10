@@ -24,8 +24,8 @@ const countdown = {
     items: [
       { name: 'MKT 335', startTime: '08:30', endTime: '09:50' },
       { name: 'CSE 271 (HUG 158)', startTime: '12:10', endTime: '02:00' },
-      { name: 'ECO 202', startTime: '02:50', endTime: '04:10' },
-      { name: 'CSE 252', startTime: '04:25', endTime: '05:45' }
+      { name: 'ECO 202', startTime: '14:50', endTime: '16:10' },
+      { name: 'CSE 252', startTime: '16:25', endTime: '17:45' }
     ]
   },
   Wednesday: {
