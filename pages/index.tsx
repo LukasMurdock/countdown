@@ -57,13 +57,13 @@ const countdown = {
         startTime: '20:00:00'
       },
       {
-        name: 'Cbus',
-        date: new Date(2022, 2 - 1, 25),
+        name: 'Exam week',
+        date: new Date(2022, 5 - 1, 9),
         startTime: '19:00:00'
       },
       {
-        name: 'Exam week',
-        date: new Date(2022, 5 - 1, 9),
+        name: 'Out',
+        date: new Date(2022, 5 - 1, 15),
         startTime: '19:00:00'
       },
       {
