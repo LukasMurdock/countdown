@@ -57,6 +57,11 @@ const countdown = {
         startTime: '20:00:00'
       },
       {
+        name: 'Lawrence',
+        date: new Date(2022, 4 - 1, 1),
+        startTime: '19:00:00'
+      },
+      {
         name: 'Exam week',
         date: new Date(2022, 5 - 1, 9),
         startTime: '19:00:00'
