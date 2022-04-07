@@ -47,21 +47,6 @@ const countdown = {
   Other: {
     items: [
       {
-        name: 'First day of Spring',
-        date: new Date(2022, 1 - 1, 24),
-        startTime: '12:00:00'
-      },
-      {
-        name: 'Charter Ball',
-        date: new Date(2022, 2 - 1, 19),
-        startTime: '20:00:00'
-      },
-      {
-        name: 'Lawrence',
-        date: new Date(2022, 4 - 1, 1),
-        startTime: '19:00:00'
-      },
-      {
         name: 'Exam week',
         date: new Date(2022, 5 - 1, 9),
         startTime: '19:00:00'
