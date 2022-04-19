@@ -52,6 +52,26 @@ const countdown = {
         startTime: '19:00:00'
       },
       {
+        name: 'CSE 252 Final',
+        date: new Date(2022, 5 - 1, 10),
+        startTime: '15:00:00'
+      },
+      {
+        name: 'MKT 335 Final',
+        date: new Date(2022, 5 - 1, 12),
+        startTime: '08:00:00'
+      },
+      {
+        name: 'CSE 271 Final',
+        date: new Date(2022, 5 - 1, 12),
+        startTime: '12:45:00'
+      },
+      {
+        name: 'ECO 202 Final',
+        date: new Date(2022, 5 - 1, 12),
+        startTime: '15:00:00'
+      },
+      {
         name: 'Out',
         date: new Date(2022, 5 - 1, 15),
         startTime: '19:00:00'
