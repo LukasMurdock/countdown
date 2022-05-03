@@ -82,6 +82,11 @@ const countdown = {
         startTime: '12:00:00'
       },
       {
+        name: 'Fall Semester 2022 Start',
+        date: new Date(new Date().getFullYear(), 8 - 1, 22),
+        startTime: '12:00:00'
+      },
+      {
         name: 'Birthday',
         date: new Date(new Date().getFullYear(), 12 - 1, 9),
         startTime: '12:00:00'
