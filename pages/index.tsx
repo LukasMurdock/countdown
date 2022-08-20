@@ -2,42 +2,31 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import { countdownProps } from 'types/types';
-import {
-  set,
-  startOfWeek,
-  addDays,
-  formatDuration,
-  intervalToDuration,
-  differenceInDays
-} from 'date-fns';
-import DateItem from '@/components/DateItem';
+import { differenceInDays } from 'date-fns';
 import DateList from '@/components/DateList';
-import useSound from 'use-sound';
 import TimeUntil from '@/components/TimeUntil';
 import Weather from '@/components/Weather';
 
 const countdown = {
   Monday: {
-    items: []
+    items: [
+      { name: 'MKT 345', startTime: '08:30', endTime: '09:50' },
+      { name: 'MKT 325', startTime: '10:05', endTime: '11:25' },
+      { name: 'RUS 256', startTime: '13:15', endTime: '14:35' }
+    ]
   },
   Tuesday: {
-    items: [
-      { name: 'MKT 335', startTime: '08:30', endTime: '09:50' },
-      { name: 'CSE 271 (HUG 158)', startTime: '12:10', endTime: '02:00' },
-      { name: 'ECO 202', startTime: '14:50', endTime: '16:10' },
-      { name: 'CSE 252', startTime: '16:25', endTime: '17:45' }
-    ]
+    items: [{ name: 'PSY 221', startTime: '01:15', endTime: '14:35' }]
   },
   Wednesday: {
-    items: []
+    items: [
+      { name: 'MKT 345', startTime: '08:30', endTime: '09:50' },
+      { name: 'MKT 325', startTime: '10:05', endTime: '11:25' },
+      { name: 'RUS 256', startTime: '13:15', endTime: '14:35' }
+    ]
   },
   Thursday: {
-    items: [
-      { name: 'MKT 335', startTime: '08:30', endTime: '09:50' },
-      { name: 'CSE 271 (BEN 009)', startTime: '12:10', endTime: '02:00' },
-      { name: 'ECO 202', startTime: '14:50', endTime: '16:10' },
-      { name: 'CSE 252', startTime: '16:25', endTime: '17:45' }
-    ]
+    items: [{ name: 'PSY 221', startTime: '01:15', endTime: '14:35' }]
   },
   Friday: {
     items: []
@@ -47,48 +36,28 @@ const countdown = {
   Other: {
     items: [
       {
-        name: 'Exam week',
-        date: new Date(2022, 5 - 1, 9),
-        startTime: '19:00:00'
-      },
-      {
-        name: 'CSE 252 Final',
-        date: new Date(2022, 5 - 1, 10),
-        startTime: '15:00:00'
-      },
-      {
-        name: 'MKT 335 Final',
-        date: new Date(2022, 5 - 1, 12),
-        startTime: '08:00:00'
-      },
-      {
-        name: 'CSE 271 Final',
-        date: new Date(2022, 5 - 1, 12),
-        startTime: '12:45:00'
-      },
-      {
-        name: 'ECO 202 Final',
-        date: new Date(2022, 5 - 1, 12),
-        startTime: '15:00:00'
-      },
-      {
-        name: 'Out',
-        date: new Date(2022, 5 - 1, 15),
-        startTime: '19:00:00'
-      },
-      {
-        name: 'Birthday2',
-        date: new Date(new Date().getFullYear(), 7 - 1, 7),
-        startTime: '12:00:00'
-      },
-      {
         name: 'Fall Semester 2022 Start',
         date: new Date(new Date().getFullYear(), 8 - 1, 22),
         startTime: '12:00:00'
       },
       {
+        name: 'Exam week',
+        date: new Date(2022, 12 - 1, 5),
+        startTime: '19:00:00'
+      },
+      {
         name: 'Birthday',
         date: new Date(new Date().getFullYear(), 12 - 1, 9),
+        startTime: '12:00:00'
+      },
+      {
+        name: 'Grad',
+        date: new Date(2023, 5 - 1, 13),
+        startTime: '19:00:00'
+      },
+      {
+        name: 'Birthday2',
+        date: new Date(new Date().getFullYear(), 7 - 1, 7),
         startTime: '12:00:00'
       }
     ]
