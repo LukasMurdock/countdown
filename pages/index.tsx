@@ -7,6 +7,11 @@ import DateList from '@/components/DateList';
 import TimeUntil from '@/components/TimeUntil';
 import Weather from '@/components/Weather';
 
+const semester = {
+  start: '08/22/2022',
+  end: '12/09/2022'
+};
+
 const countdown = {
   Monday: {
     items: [
@@ -16,7 +21,7 @@ const countdown = {
     ]
   },
   Tuesday: {
-    items: [{ name: 'PSY 221', startTime: '01:15', endTime: '14:35' }]
+    items: [{ name: 'PSY 221', startTime: '13:15', endTime: '14:35' }]
   },
   Wednesday: {
     items: [
@@ -26,7 +31,7 @@ const countdown = {
     ]
   },
   Thursday: {
-    items: [{ name: 'PSY 221', startTime: '01:15', endTime: '14:35' }]
+    items: [{ name: 'PSY 221', startTime: '13:15', endTime: '14:35' }]
   },
   Friday: {
     items: []
@@ -35,11 +40,11 @@ const countdown = {
   Sunday: {},
   Other: {
     items: [
-      {
-        name: 'Fall Semester 2022 Start',
-        date: new Date(new Date().getFullYear(), 8 - 1, 22),
-        startTime: '12:00:00'
-      },
+      //   {
+      //     name: 'Fall Semester 2022 Start',
+      //     date: new Date(new Date().getFullYear(), 8 - 1, 22),
+      //     startTime: '12:00:00'
+      //   },
       {
         name: 'Exam week',
         date: new Date(2022, 12 - 1, 5),
@@ -65,13 +70,6 @@ const countdown = {
 } as countdownProps;
 
 const Home: NextPage = () => {
-  //   const currentDateTime = new Date();
-
-  const semester = {
-    start: '08/22/2022',
-    end: '12/09/2022'
-  };
-
   const [currentDateTime, setCurrentDateTime] = useState<Date>();
   const [dateListView, setDateListView] = useState<'day' | 'week'>('week');
 
@@ -79,8 +77,6 @@ const Home: NextPage = () => {
     setCurrentDateTime(new Date());
 
     const interval = setInterval(() => {
-      const loadDate = new Date();
-
       setCurrentDateTime(new Date());
     }, 1000);
     return () => clearInterval(interval);
@@ -102,12 +98,6 @@ const Home: NextPage = () => {
     second: 'numeric'
   });
 
-  // const [playActive] = useSound(
-  //   '/assets/audio/duck.mp3',
-  //   { volume: 0.25 }
-  // );
-  // onMouseDown={playActive}
-
   return (
     <div>
       <Head>
@@ -116,11 +106,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="p-6 m-auto prose">
-        <p className="m-0 text-sm text-gray-400 ">{lastUpdatedFormat}</p>
-        <h1 className="pb-2 m-0 font-serif text-gray-600 ">{todayFormat}</h1>
+        <p className="m-0 text-sm text-gray-400">{lastUpdatedFormat}</p>
+        <h1 className="pb-2 m-0 font-serif text-gray-600">{todayFormat}</h1>
         <Weather />
         <DateList
-          dayView={dateListView}
+          dayView={'week'}
           countdown={countdown}
           currentDateTime={currentDateTime}
         />
