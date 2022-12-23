@@ -15,23 +15,31 @@ const semester = {
 const countdown = {
   Monday: {
     items: [
-      { name: 'MKT 345', startTime: '08:30', endTime: '09:50' },
-      { name: 'MKT 325', startTime: '10:05', endTime: '11:25' },
-      { name: 'RUS 256', startTime: '13:15', endTime: '14:35' }
+      { name: 'MKT 392', startTime: '08:30', endTime: '09:50' },
+      { name: 'ENG 219', startTime: '10:05', endTime: '11:25' },
+      { name: 'MKT 442', startTime: '11:40', endTime: '13:00' },
+      { name: 'RUS 257', startTime: '13:15', endTime: '14:35' }
     ]
   },
   Tuesday: {
-    items: [{ name: 'PSY 221', startTime: '13:15', endTime: '14:35' }]
+    items: [
+      { name: 'SLM 150C', startTime: '08:30', endTime: '09:50' },
+      { name: 'SLM 150E', startTime: '10:05', endTime: '11:55' }
+    ]
   },
   Wednesday: {
     items: [
-      { name: 'MKT 345', startTime: '08:30', endTime: '09:50' },
-      { name: 'MKT 325', startTime: '10:05', endTime: '11:25' },
-      { name: 'RUS 256', startTime: '13:15', endTime: '14:35' }
+      { name: 'MKT 392', startTime: '08:30', endTime: '09:50' },
+      { name: 'ENG 219', startTime: '10:05', endTime: '11:25' },
+      { name: 'MKT 442', startTime: '11:40', endTime: '13:00' },
+      { name: 'RUS 257', startTime: '13:15', endTime: '14:35' }
     ]
   },
   Thursday: {
-    items: [{ name: 'PSY 221', startTime: '13:15', endTime: '14:35' }]
+    items: [
+      { name: 'SLM 150C', startTime: '08:30', endTime: '09:50' },
+      { name: 'SLM 150E', startTime: '10:05', endTime: '11:55' }
+    ]
   },
   Friday: {
     items: []
