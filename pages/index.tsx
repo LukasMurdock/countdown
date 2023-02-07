@@ -8,8 +8,8 @@ import TimeUntil from '@/components/TimeUntil';
 import Weather from '@/components/Weather';
 
 const semester = {
-  start: '08/22/2022',
-  end: '12/09/2022'
+  start: '01/23/2023',
+  end: '05/12/2023'
 };
 
 const countdown = {
