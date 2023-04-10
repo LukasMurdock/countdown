@@ -55,8 +55,8 @@ const countdown = {
       //   },
       {
         name: 'Exam week',
-        date: new Date(2022, 12 - 1, 5),
-        startTime: '19:00:00'
+        date: new Date(2023, 5 - 1, 8),
+        startTime: '08:00:00'
       },
       {
         name: 'Birthday',
